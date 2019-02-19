@@ -1,0 +1,17 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+article section {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem; }
+  @media print, screen and (min-width: 40em) {
+    article section {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem; } }
+  @media print, screen and (min-width: 64em) {
+    article section {
+      padding-top: 1.5625rem;
+      padding-bottom: 1.5625rem; } }
