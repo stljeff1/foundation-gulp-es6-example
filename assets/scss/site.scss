@@ -1,0 +1,11 @@
+
+
+@import "settings/_settings.scss";
+@import "site-settings";
+
+@import "foundation.scss";
+
+
+article section {
+    @include xy-gutters($gutter-position: top bottom, $gutter-type: padding);
+}
