@@ -11,23 +11,25 @@ import gutil from 'gulp-util';
 
 
 global.paths = {
-	'foundation_sass': {
-		src: 'node_modules/foundation-sites/scss/',
-		init: 'assets/scss/foundation-custom.scss',
+	site: {
+		scss: 'assets/scss/*.scss',
 		dist: 'dist'
+	},
+	'foundation': {
+		scss: 'node_modules/foundation-sites/scss/'
 	}
 };
 
-gulp.task('foundation-sass', () => {
-	gulp.src(global.paths.foundation_sass.init)
+gulp.task('sass', () => {
+	gulp.src(global.paths.site.scss)
 		.pipe(sass( {
-				includePaths: [global.paths.foundation_sass.src]
+				includePaths: [global.paths.foundation.scss]
 			} ).on('erroor', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(gulp.dest(global.paths.foundation_sass.dist))
+		.pipe(gulp.dest(global.paths.site.dist))
 		.pipe(rename( {suffix: '.min'} ))
-		.pipe(gulp.dest(global.paths.foundation_sass.dist));
+		.pipe(gulp.dest(global.paths.site.dist));
 
 });
 
-gulp.task('default', ['foundation-sass']);
+gulp.task('default', ['sass']);
