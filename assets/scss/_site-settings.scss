@@ -1,0 +1,10 @@
+
+$grid-column-gutter: (
+	small: 30px,
+	medium: 40px,
+	large: 50px
+);
+
+$grid-margin-gutters: $grid-column-gutter;
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;

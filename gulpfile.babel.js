@@ -13,7 +13,7 @@ import gutil from 'gulp-util';
 global.paths = {
 	'foundation_sass': {
 		src: 'node_modules/foundation-sites/scss/',
-		init: 'scss/foundation-custom.scss',
+		init: 'assets/scss/foundation-custom.scss',
 		dist: 'dist'
 	}
 };
