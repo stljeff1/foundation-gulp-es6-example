@@ -1,6 +1,11 @@
 
+
 @import "settings/_settings.scss";
+@import "site-settings";
 
 @import "foundation.scss";
 
 @include foundation-everything;
+
+h1 { color: $body-background; }
+
